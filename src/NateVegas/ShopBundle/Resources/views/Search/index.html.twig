@@ -1,6 +1,5 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-<h1>ShopTop!</h1>
 <form method="get" action="">
     <label for="search_input">Search Clothes</label><br />
     <input name="search" id="search_input">
@@ -12,6 +11,7 @@
         {% for result in results %}
             <li>{% include 'NateVegasShopBundle:Search:searchItem.html.twig' %}</li>
         {% endfor %}
+        <li>{% include 'NateVegasShopBundle:Search:searchItem.html.twig' with { 'result': 'record player'} %}</li>
     </ul>
 </section>
 {% endblock %}

@@ -1,3 +1,6 @@
 nate_vegas_shop_homepage:
     path:     /search
     defaults: { _controller: NateVegasShopBundle:Search:index }
+nate_vegas_shop_buy:
+    path:     /buy
+    defaults: { _controller: NateVegasShopBundle:Buy:index }

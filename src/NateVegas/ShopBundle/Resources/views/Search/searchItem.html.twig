@@ -1,1 +1,5 @@
-{{ result }}<input type="button" value="Buy">
+{{ result }}
+<form method="post" action="buy">
+    <input type="hidden" name="item_name" value="{{ result }}">
+    <input type="submit" value="Buy">
+</form>
