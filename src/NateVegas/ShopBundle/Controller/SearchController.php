@@ -1,6 +1,7 @@
 <?php
 namespace NateVegas\ShopBundle\Controller;
 
+use NateVegas\ShopBundle\Catalogue\SimpleCatalogue;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -12,7 +13,9 @@ class SearchController extends Controller
 {
     public function indexAction(Request $request)
     {
-        $items = array('black hat', 'red hat', 'blue pants', 'orange scarf', 'red pants', 'red checkered scarf');
+        $catalogue = new SimpleCatalogue();
+
+        $items = $catalogue->getItems();
 
         $searchQuery = $request->query->get('search');
 
