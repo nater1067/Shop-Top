@@ -1,5 +1,6 @@
+<h1>ShopTop!</h1>
 <form method="get" action="">
-    <label for="search_input">Search</label>
+    <label for="search_input">Search Clothes</label><br />
     <input name="search" id="search_input">
     <input type="submit">
 </form>
@@ -7,7 +8,7 @@
 <section>
     <ul>
         {% for result in results %}
-            <li>{{ result }}</li>
+            <li>{% include 'NateVegasShopBundle:Search:searchItem.html.twig' %}</li>
         {% endfor %}
     </ul>
 </section>
