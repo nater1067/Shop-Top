@@ -17,7 +17,7 @@ class BuyController extends Controller
 
         $item = $this->get('request')->request->get('item_name');
 
-        if (!array_search($item, $catalogue->getItems())) {
+        if (!array_search(strtolower($item), $catalogue->getItems())) {
             throw $this->createNotFoundException('The product "'.$item.'" does not exist');
         }
 

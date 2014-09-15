@@ -12,7 +12,7 @@
             {% for result in results %}
                 <li style="list-style-type: none;">{% include 'NateVegasShopBundle:Search:searchItem.html.twig' %}</li>
             {% endfor %}
-            <li style="list-style-type: none;">{% include 'NateVegasShopBundle:Search:searchItem.html.twig' with { 'result': 'record player'} %}</li>
+            <li style="list-style-type: none;"><b style="color:red">(Unavailable Item)</b> {% include 'NateVegasShopBundle:Search:searchItem.html.twig' with { 'result': 'record player'} %}</li>
         </ul>
     </section>
 {% endif %}

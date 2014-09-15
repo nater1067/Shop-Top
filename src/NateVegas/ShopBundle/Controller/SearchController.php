@@ -22,7 +22,7 @@ class SearchController extends Controller
         $results = array();
         if (!empty($searchQuery)) {
             $results = array_filter($items, function ($element) use ($searchQuery) {
-                return strpos($element, $searchQuery) !== false;
+                return strpos($element, strtolower($searchQuery)) !== false;
             });
         }
 
