@@ -1,0 +1,13 @@
+<form method="get" action="">
+    <label for="search_input">Search</label>
+    <input name="search" id="search_input">
+    <input type="submit">
+</form>
+<h2>Results</h2>
+<section>
+    <ul>
+        {% for result in results %}
+            <li>{{ result }}</li>
+        {% endfor %}
+    </ul>
+</section>
