@@ -1,0 +1,4 @@
+nate_vegas_shop:
+    resource: "@NateVegasShopBundle/Resources/config/routing.yml"
+    prefix:   /
+

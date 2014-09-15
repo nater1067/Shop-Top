@@ -1,0 +1,7 @@
+parameters:
+#    nate_vegas_shop.example.class: NateVegas\ShopBundle\Example
+
+services:
+#    nate_vegas_shop.example:
+#        class: %nate_vegas_shop.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

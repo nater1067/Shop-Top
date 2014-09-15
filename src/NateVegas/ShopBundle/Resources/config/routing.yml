@@ -1,0 +1,3 @@
+nate_vegas_shop_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: NateVegasShopBundle:Default:index }
