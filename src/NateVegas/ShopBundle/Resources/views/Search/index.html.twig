@@ -1,17 +1,19 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-<form method="get" action="">
-    <label for="search_input">Search Clothes</label><br />
-    <input name="search" id="search_input">
-    <input type="submit">
-</form>
-<h2>Results</h2>
-<section>
-    <ul>
-        {% for result in results %}
-            <li>{% include 'NateVegasShopBundle:Search:searchItem.html.twig' %}</li>
-        {% endfor %}
-        <li>{% include 'NateVegasShopBundle:Search:searchItem.html.twig' with { 'result': 'record player'} %}</li>
-    </ul>
-</section>
+    <form method="get" action="">
+        <h2>Search Clothes</h2>
+        <input name="search" id="search_input" placeholder="Red hat">
+        <input type="submit">
+    </form>
+{% if results|length > 0 %}
+    <h2>Results</h2>
+    <section>
+        <ul>
+            {% for result in results %}
+                <li style="list-style-type: none;">{% include 'NateVegasShopBundle:Search:searchItem.html.twig' %}</li>
+            {% endfor %}
+            <li style="list-style-type: none;">{% include 'NateVegasShopBundle:Search:searchItem.html.twig' with { 'result': 'record player'} %}</li>
+        </ul>
+    </section>
+{% endif %}
 {% endblock %}

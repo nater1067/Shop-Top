@@ -1,4 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-You purchased 1 {{ item_purchased }}!
+    <h2>Success</h2>
+    You purchased 1 {{ item_purchased }}!<br />
+    <a href="{{ path('nate_vegas_shop_search') }}">Back to search</a>
 {% endblock %}

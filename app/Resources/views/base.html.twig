@@ -8,8 +8,13 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('bundles/bmatznerfoundation/css/foundation.min.css') }}" />
     </head>
     <body>
-        <h1>ShopTop!</h1>
-        {% block body %}{% endblock %}
+        <div class="row">
+            <h1>ShopTop! <small>Buy clothes you'll never wear</small></h1>
+            <hr>
+        </div>
+        <div class="row">
+            {% block body %}{% endblock %}
+        </div>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

@@ -1,5 +1,5 @@
-{{ result }}
-<form method="post" action="buy">
+<b>{{ result }}</b> - <i>The best clothing item you will ever buy.</i>
+<form method="post" action="{{ path('nate_vegas_shop_buy') }}">
     <input type="hidden" name="item_name" value="{{ result }}">
     <input type="submit" value="Buy">
 </form>
