@@ -18,7 +18,6 @@
         "sensio/distribution-bundle": "~3.0",
         "sensio/framework-extra-bundle": "~3.0",
         "incenteev/composer-parameter-handler": "~2.0",
-	"behat/behat": "3.0.*@dev",
         "bmatzner/foundation-bundle": "~5.3"
     },
     "require-dev": {
